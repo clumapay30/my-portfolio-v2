@@ -1,0 +1,109 @@
+@media(min-width: 375px) {
+    .container {
+        width: 100%;
+        margin: 98px;
+        overflow: hidden;
+    }
+
+    .container h1 {
+        color: #00B2CA;
+        text-shadow: 1px 1px 3px #212121;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 26px;
+        text-align: center;
+    }
+
+    .logoFrontEnd {
+        width: 350px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 52px;
+    }
+
+    .fontEnd {
+        display: flex;
+        align-items: center;
+    }
+
+    .backEnd {
+        display: flex;
+        align-items: center;
+    }
+    
+    .platform {
+        display: flex;
+        align-items: center;
+    }
+
+    .design {
+        display: flex;
+        align-items: center;
+    }
+
+    .skillsRole {
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+    }
+
+    .skillsRole div h2 {
+        font-size: 14px;
+        color: #000814;
+        padding: 10px;
+        transition: .5s ease-in-out;
+    }
+
+    .active {
+        display: initial;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s ease-in-out; 
+    }
+    
+    .inactive {
+        display: none;
+        transition: .3s ease-in-out;
+    }
+
+    .focus {
+        border: 1px solid #000;
+        border-radius: 5px;;
+        
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        width: calc(768px - 64px);
+    }
+
+    .skillsRole {
+        justify-content: center;
+    }
+
+    .skillsRole div h2 {
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .container {
+        width: calc(1024px - 64px);
+    }
+}
+
+@media(min-width: 1366px) {
+    .container {
+        width: calc(1366px - 64px);
+        margin: 0 auto;
+    }
+
+    .skillsRole {
+        justify-content: center;
+    }
+}

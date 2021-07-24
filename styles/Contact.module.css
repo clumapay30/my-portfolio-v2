@@ -1,0 +1,133 @@
+@media(min-width: 375px) {
+    .container {
+        width: calc(428px - 64px);
+        margin: 100px 98px;
+        margin-top: 200px;
+    }
+
+    .container h1 {
+        text-align: center;
+        margin: 20px;
+        color: #00B2CA;
+        text-shadow: 1px 1px 3px #212121;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .inputText {
+        width: 290px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 28px;
+    }
+
+    .inputText label {
+        color: #000814;
+        font-size: 12px;
+        text-align: left;
+        margin-bottom: 7px;
+    }
+
+    .inputText input {
+        width: 290px;
+        height: 40px;
+        background: #F1F9FF 0% 0% no-repeat padding-box;
+        border: 2px solid #BCE0FD;
+        border-radius: 10px;
+    }
+
+    .inputText textarea {
+        width: 290px;
+        height: 130px;
+        background: #F1F9FF 0% 0% no-repeat padding-box;
+        border: 2px solid #BCE0FD;
+        border-radius: 10px;
+    }
+
+    .btn {
+        width: 73px;
+        height: 33px;
+        background: #000814 0% 0% no-repeat padding-box;
+        position: relative;
+        left: 40px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px #212121;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+    }
+
+    .btn:hover {
+        transform: translateX(2px);
+        box-shadow: 1px 1px 5px #212121;
+    }
+
+    .btn h2 { 
+        text-align: center;
+        font: normal normal bold 7px/8px Consolas;
+        letter-spacing: 0px;
+        color: #00B2CA;
+        position: absolute;
+        top: 12px;
+        left: 24px;
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        width: calc(768px - 64px);
+    }
+
+    .formWrapper {
+        width: 592px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .inputText {
+        margin-left: 20px;
+    }
+
+    .btn {
+        left: 78px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .container {
+        width: calc(1024px - 64px);
+    }
+    
+    .formWrapper {
+        width: 650px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        left: 176px;
+    }
+}
+
+@media(min-width: 1366px) {
+    .container {
+        width: calc(1366px - 64px);
+        margin: 0 auto;
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+    
+    .formWrapper {
+        width: 650px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        left: 345px;
+    }
+}

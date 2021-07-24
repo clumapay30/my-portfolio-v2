@@ -1,0 +1,60 @@
+@media(min-width: 375px) {
+    .container {
+        margin: 200px 20px 195px 98px;
+    }
+
+    .container p {
+        color: #000814;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .container h1 {
+        color: #00B2CA;
+        font-size: 16px;
+        text-shadow: 0px 2px 5px #212121;
+    }
+
+    .experience {
+        display: flex;
+        margin: 33px 0;
+    }
+
+    .company h2 {
+        color: #000814;
+        font-size: 14px;
+    }
+
+    .company p {
+        color: #000814;
+        font-size: 12px;
+    }
+
+    .rule {
+        display: none;
+    }
+}
+
+@media(min-width: 768px) {
+    .company h2 {
+        width: 260px;
+    }
+
+    .experience .rule {
+        display: initial;
+        margin-right: 20px;
+    }
+
+    .experience p {
+        color: #000814;
+    }
+}
+
+@media(min-width: 1366px) {
+    .container {
+        width: 920px;
+        margin: 0 auto;
+        margin-top: 200px;
+        margin-bottom: 195px
+    }
+}

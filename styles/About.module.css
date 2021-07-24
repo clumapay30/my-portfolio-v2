@@ -1,0 +1,117 @@
+@media(min-width: 315px) {
+    .container {
+        margin-left: 98px;
+    }
+
+    .container h2 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #00B2CA;
+        text-shadow: 1px 1px 6px #212121;
+        margin-bottom: 16px;
+    }
+
+    .container p {
+        margin-right: 6px;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 0px;
+        color: #000814;
+        text-shadow: 1px 1px 2px #2F3E46;
+    }
+
+    .imgContainerA {
+        display: none;
+    }
+
+    .imgContainerA h2 {
+        margin: 0 20px;
+        color: #000814;
+        font-size: 12px;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px #2F3E46;
+    }
+
+    .imgContainer {
+        margin-top: 58px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .image {
+        margin: 41px 0 10px;
+        text-align: center;
+    }
+
+    .imgContainer h2 {
+        margin: 0 20px;
+        color: #000814;
+        font-size: 12px;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px #2F3E46;
+    }
+
+    .downArrow {
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+    }
+
+    .downArrow:hover {
+        transform: translateY(-2px);
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        margin: 0 120px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .container p {
+        width: 474px;
+    }
+
+    .containerA {
+        display: flex;
+        align-items: center;
+    }
+
+    .containerA .image {
+        margin-left: 24px;
+    }
+
+    .imgContainerA {
+        margin-top: 58px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .imgContainerA h2 {
+        margin: 0 20px;
+        color: #000814;
+        font-size: 12px;
+        font-weight: 700;
+        text-shadow: 1px 1px 2px #2F3E46;
+    }
+
+    .imgContainer {
+        display: none;
+    }
+}
+
+@media(min-width: 1366px) {
+    .container {
+        width: 1366px;
+        margin: 0 auto;
+    }
+    .containerA {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+}

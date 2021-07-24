@@ -1,0 +1,94 @@
+.container {
+    background-color: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 65px;
+    height: 100%;
+}
+
+.image {
+    position: fixed;
+    top: 12px;
+    left: 16px;
+}
+
+.img {
+    border-radius: 5px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: calc(100vh - 50vh);
+    left: 20px;
+    line-height: 45px;
+}
+
+.nav2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 12px;
+    left: 16px;
+    line-height: 45px;
+}
+
+.textHover {
+    transition: .3s ease-in-out;
+}
+
+/* Hover */
+.home,
+.about,
+.project,
+.contact,
+.resume,
+.github,
+.twitter,
+.linkedin {
+    transition: .2s ease-in-out;
+    position: relative;
+}
+
+.home:hover,
+.about:hover,
+.project:hover,
+.contact:hover,
+.resume:hover,
+.github:hover,
+.twitter:hover,
+.linkedin:hover {
+    transform: translateX(1px);
+}
+
+.inactive {
+    width: 50px;
+    border-top-right-radius: 10px;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    /* transition: .2s ease-in-out; */
+}
+
+.active {
+    width: 100px;
+    text-align: center;
+    border-top-right-radius: 10px;
+    text-decoration: none;
+    background-color: #000;
+    color: #00B2CA;
+    font-size: 10px;
+    font-weight: 800;
+    position: absolute;
+    top: 0;
+    left: 35px;
+    /* transition: .2s ease-in-out; */
+}

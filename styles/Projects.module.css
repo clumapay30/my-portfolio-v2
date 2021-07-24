@@ -1,0 +1,109 @@
+@media(min-width: 375px) {
+    .container {
+        width: calc(428px - 64px);
+        margin: 98px;
+        margin-top: 200px;
+    }
+
+    .container h1 {
+        color: #00B2CA;
+        text-shadow: 0px 2px 5px #212121;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .seeMore {
+        margin-top: 20px;
+        color: #F1FFFA;
+        text-shadow: 0px 2px 5px #212121;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .allProjects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project {
+        margin-top: 20px;
+        padding: 10px;
+        width: 246px;
+        height: 206px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .project h2 {
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+        position: absolute;   
+        top: 12px;
+        left: 12px;
+    }
+
+    .project p {
+        font-size: 12px;
+        color: #24231F;
+        position: absolute;   
+        top: 48px;
+        left: 13px;
+    }
+
+    .project a {
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .githubImg {
+        background-color: #000814;
+        box-shadow: 3px 3px 5px #24231F;
+        transition: .2s ease-in-out;
+    }
+
+    .githubImg:hover {
+        box-shadow: 1px 1px 4px #24231F;
+        transform: translateX(2px);
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        width: calc(768px - 64px);
+    }
+
+    .allProjects {
+        margin-left: 74px;
+        justify-content: flex-start;
+    }
+
+    .project {
+        margin-left: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media(min-width: 1024px) {
+    .container {
+        width: calc(1024px - 64px);
+    }
+}
+
+@media(min-width: 1366px) {
+    .container {
+        width: calc(1366px - 64px);
+        margin: 0 auto;
+        margin-top: 200px;
+        margin-bottom: 98px;
+    }
+    .allProjects {
+        margin-top: 10px;
+        margin-left: 0;
+        justify-content: center;
+    }
+}

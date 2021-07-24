@@ -1,0 +1,37 @@
+@media(min-width: 375px) {
+    .container {
+        width: calc(428px - 64px);
+        margin-left: 98px;
+        margin-bottom: 22px;
+        text-align: center;
+    }
+
+    .container p {
+        margin-left: 10px;
+        font: normal normal normal 10px/20px Consolas;
+        letter-spacing: 0px;
+        color: #00B2CA;
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        width: calc(768px - 64px);
+        margin: 0 auto;
+    }
+}
+
+@media(min-width: 1024px) {
+    .container {
+        width: calc(1024px - 64px);
+        margin: 0 auto;
+    }
+}
+
+
+@media(min-width: 1366px) {
+    .container {
+        width: calc(1366px - 64px);
+        margin: 0 auto;
+    }
+}
