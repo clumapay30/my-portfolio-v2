@@ -1,6 +1,9 @@
 import styles from '../styles/Skills.module.css'
 import Image from 'next/image';
 import React, { useState } from 'react';
+import { motion, useAnimation } from 'framer-motion'
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer'
 
 const Skills = () => {
     const [frontEnd, setFrontEnd] = useState(false);
@@ -36,8 +39,26 @@ const Skills = () => {
         setDesign(false)
     }
 
+    const {ref, inView} = useInView();
+    const animation = useAnimation();
+
+    useEffect(() => {
+        console.log('test', inView)
+        if(inView) {
+            animation.start({
+                opacity: 1,
+                transition: {
+                    duration: 1, bounce: 1
+                }
+            })
+        }
+        if(!inView) {
+            animation.start({opacity: 0})
+        }
+    }, [inView])
+
     return (
-        <div className={styles.container}>
+        <motion.div animate={animation} ref={ref} className={styles.container}>
             <h1>Skills</h1>
             <div className={styles.logoFrontEnd}>
                 <div className={`${styles.fontEnd} ${frontEnd ? styles.active : styles.inactive}`}>
@@ -78,7 +99,7 @@ const Skills = () => {
                     <h2 className={`${design ? styles.focus : ""}`} onClick={designHandler}>Design</h2>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

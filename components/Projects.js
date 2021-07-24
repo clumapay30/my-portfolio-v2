@@ -1,10 +1,31 @@
 import Image from 'next/image';
 import Link from 'next/link'
 import styles from '../styles/Projects.module.css'
+import { motion, useAnimation } from 'framer-motion'
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer'
 
 const Projects = () => {
+    const {ref, inView} = useInView();
+    const animation = useAnimation();
+
+    useEffect(() => {
+        console.log('test', inView)
+        if(inView) {
+            animation.start({
+                opacity: 1,
+                transition: {
+                    ease: "easeInOut", duration: 1, bounce: 1
+                }
+            })
+        }
+        if(!inView) {
+            animation.start({opacity: 0})
+        }
+    }, [inView])
+
     return (
-        <div className={styles.container} id="project">
+        <motion.div animate={animation} ref={ref} className={styles.container} id="project">
             <h1>Projects I’ve Built</h1>
             <div className={styles.allProjects}>
                 <div className={styles.project}>
@@ -36,7 +57,7 @@ const Projects = () => {
                 </div>
             </div>
             <h2 className={styles.seeMore}>See more...</h2>
-        </div>
+        </motion.div>
     )
 }
 

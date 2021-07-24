@@ -1,7 +1,29 @@
 import styles from "../styles/Contact.module.css"
+import { motion, useAnimation } from 'framer-motion'
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer'
+
 const Contact = () => {
+    const {ref, inView} = useInView();
+    const animation = useAnimation();
+
+    useEffect(() => {
+        console.log('test', inView)
+        if(inView) {
+            animation.start({
+                opacity: 1,
+                transition: {
+                    duration: .5, bounce: 1
+                }
+            })
+        }
+        if(!inView) {
+            animation.start({opacity: 0, transition: {duration: 1}})
+        }
+    }, [inView])
+
     return (
-        <div className={styles.container} id="contact">
+        <motion.div animate={animation} ref={ref} className={styles.container} id="contact">
             <h1>Get In Touch</h1>
             <form className={styles.contactForm}>
                 <div className={styles.formWrapper}>
@@ -36,7 +58,7 @@ const Contact = () => {
                     <h2 type="submit" id="button">Submit</h2>
                 </div>
             </form>
-        </div>
+        </motion.div>
     )
 }
 
