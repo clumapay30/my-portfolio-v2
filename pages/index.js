@@ -1,11 +1,14 @@
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <div className={styles.container} id="home">
+      <Head>
+        <link rel="shortcut icon" href="/favicon.png" />
+      </Head>
       <div className={styles.containerLeft}>
         <h3>Hi,</h3>
         <h1>{`I'm Christian Lumapay`}</h1>
