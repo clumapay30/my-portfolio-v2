@@ -6,8 +6,8 @@
     .container h2 {
         font-size: 16px;
         font-weight: bold;
-        color: #00B2CA;
-        text-shadow: 1px 1px 6px #212121;
+        color: #000;
+        text-shadow: 1px 1px 2px #212121;
         margin-bottom: 16px;
     }
 

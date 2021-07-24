@@ -14,8 +14,8 @@ export default function Home() {
           <Link href="#contact">
             <a className={styles.btn}>Get in touch</a>
           </Link>
-          <Link href="/schedule_meeting">
-            <a className={styles.btn}>Schedule a meeting</a>
+          <Link href="https://calendly.com/clumapay-info/15min">
+            <a target="_blank" rel="noreferrer noopener" className={styles.btn}>Schedule a meeting</a>
           </Link>
         </div>
       </div>

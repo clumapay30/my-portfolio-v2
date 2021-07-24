@@ -25,7 +25,7 @@
         margin-top: 16px;
         font-size: 22px;
         color: #000814;
-        text-shadow: 1px 1px 3px #1A242A;
+        text-shadow: 1px 1px 3px #171717;
     }
 
     .containerLeft p {
@@ -51,7 +51,7 @@
         box-shadow: 1px 1px 4px #212121;
         border-radius: 5px;
         font-size: 10px;
-        color: #00B2CA;
+        color: #8D99AE;
         text-decoration: none;
         transition: .1s ease-in-out;
     }
@@ -60,6 +60,7 @@
     .btn:hover {
         transform: translateX(2px);
         box-shadow: 0px 0px 2px #212121;
+        color: #fff;
     }
 
     .image {
@@ -124,7 +125,7 @@
     }
 
     .container h1 {
-        font-size: 26px;
+        font-size: 32px;
         margin-left: 100px;
     }
 

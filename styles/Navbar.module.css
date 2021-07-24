@@ -25,6 +25,8 @@
     bottom: calc(100vh - 50vh);
     left: 20px;
     line-height: 45px;
+    cursor: pointer;
+    border: red;
 }
 
 .nav2 {
@@ -33,7 +35,7 @@
     align-items: center;
     position: fixed;
     bottom: 12px;
-    left: 16px;
+    left: 20px;
     line-height: 45px;
 }
 
@@ -52,6 +54,7 @@
 .linkedin {
     transition: .2s ease-in-out;
     position: relative;
+    cursor: pointer;
 }
 
 .home:hover,
@@ -74,7 +77,7 @@
     font-size: 16px;
     position: absolute;
     top: 0;
-    left: -150px;
+    left: -200px;
     /* transition: .2s ease-in-out; */
 }
 
@@ -84,8 +87,8 @@
     border-top-right-radius: 10px;
     text-decoration: none;
     background-color: #000;
-    color: #00B2CA;
-    font-size: 10px;
+    color: #fff;
+    font-size: 11px;
     font-weight: 800;
     position: absolute;
     top: 0;
