@@ -57,20 +57,20 @@ const Navbar = () => {
                         {resumeEffect ? <h2 className={styles.active}>My resume</h2> : <h2 className={styles.inactive}>My resume</h2>}
                     </a>
                 </Link>
-                <Link href="#github">
-                    <a className={styles.github}>
+                <Link href="https://github.com/clumapay30">
+                    <a className={styles.github} target="_blank" rel="noreferrer noopener">
                         <Image src={!githubEffect ? "/github-navbar.png" : "/github-navbar-hover.png"} onMouseEnter={() => setGithubEffect(true)} onMouseLeave={() => setGithubEffect(false)} width={20} height={20} />
                         {githubEffect ? <h2 className={styles.active}>Repository</h2> : <h2 className={styles.inactive}>Repository</h2>}
                     </a>
                 </Link>
-                <Link href="#twitter">
-                    <a className={styles.twitter}>
+                <Link href="https://twitter.com/c_lumapay30">
+                    <a className={styles.twitter} target="_blank" rel="noreferrer noopener">
                         <Image src={!twitterEffect ? "/twitter.png" : "/twitter-hover.png"} onMouseEnter={() => setTwitterEffect(true)} onMouseLeave={() => setTwitterEffect(false)} width={20} height={18} />
                         {twitterEffect ? <h2 className={styles.active}>Twitter</h2> : <h2 className={styles.inactive}>Twitter</h2>}
                     </a>
                 </Link>
-                <Link href="#linkedin">
-                    <a className={styles.linkedin}>
+                <Link href="https://www.linkedin.com/in/christian-virtual-assistant/">
+                    <a className={styles.linkedin} target="_blank" rel="noreferrer noopener">
                         <Image src={!linkedinEffect ? "/linkedin.png" : "/linkedin-hover.png"} onMouseEnter={() => setLinkedinEffect(true)} onMouseLeave={() => setLinkedinEffect(false)} width={20} height={20} />
                         {linkedinEffect ? <h2 className={styles.active}>LinkedIn</h2> : <h2 className={styles.inactive}>LinkedIn</h2>}
                     </a>
