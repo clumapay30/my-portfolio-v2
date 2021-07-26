@@ -39,7 +39,7 @@ const Projects = () => {
                 </div>
                 <div className={styles.project}>
                     <h2>Todo List</h2>
-                    <p>One of my quick project when I'm starting to get used to javascript.</p>
+                    <p>{`One of my quick project when I'm starting to get used to javascript.`}</p>
                     <Link href="https://github.com/clumapay30/todo-list">
                         <a target="_blank" rel="noreferrer noopener" className={styles.githubImg}>
                             <Image src="/project-btn.png" alt="Todo List" width={87} height={38} />
@@ -53,7 +53,7 @@ const Projects = () => {
                 </div>
                 <div className={styles.project}>
                     <h2>Expand Card</h2>
-                    <p>One of my quick project when I'm starting to get used to javascript.</p>
+                    <p>{`One of my quick project when I'm starting to get used to javascript.`}</p>
                     <Link href="https://github.com/clumapay30/expanding-cards">
                         <a target="_blank" rel="noreferrer noopener" className={styles.githubImg}>
                             <Image src="/project-btn.png" alt="Spanding Cards" width={87} height={38} />
@@ -67,7 +67,7 @@ const Projects = () => {
                 </div>
                 <div className={styles.project}>
                     <h2>Strength password</h2>
-                    <p>One of my quick project when I'm starting to get used to javascript.</p>
+                    <p>{`One of my quick project when I'm starting to get used to javascript.`}</p>
                     <Link href="https://github.com/clumapay30/strength-password">
                         <a target="_blank" rel="noreferrer noopener" className={styles.githubImg}>
                             <Image src="/project-btn.png" alt="Spanding Cards" width={87} height={38} />
@@ -81,7 +81,7 @@ const Projects = () => {
                 </div>
                 <div className={styles.project}>
                     <h2>Calculator</h2>
-                    <p>One of my quick project when I'm starting to get used to javascript.</p>
+                    <p>{`One of my quick project when I'm starting to get used to javascript.`}</p>
                     <Link href="https://github.com/clumapay30/calculator">
                         <a target="_blank" rel="noreferrer noopener" className={styles.githubImg}>
                             <Image src="/project-btn.png" alt="Spanding Cards" width={87} height={38} />
