@@ -7,7 +7,7 @@
         font-size: 16px;
         font-weight: bold;
         color: #000;
-        text-shadow: 1px 1px 2px #212121;
+        text-shadow: 0px 1px 2px #212121;
         margin-bottom: 16px;
     }
 
@@ -17,7 +17,7 @@
         font-weight: bold;
         letter-spacing: 0px;
         color: #000814;
-        text-shadow: 1px 1px 2px #2F3E46;
+        /* text-shadow: 0px 1px 2px #2F3E46; */
     }
 
     .imgContainerA {

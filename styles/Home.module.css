@@ -25,7 +25,7 @@
         margin-top: 16px;
         font-size: 22px;
         color: #000814;
-        text-shadow: 1px 1px 3px #171717;
+        text-shadow: 1px 1px 2px #171717;
     }
 
     .containerLeft p {
@@ -48,7 +48,7 @@
         text-align: center;
         padding: 10px 27px;
         background: #000814 0% 0% no-repeat padding-box;
-        box-shadow: 1px 1px 4px #212121;
+        box-shadow: 1px 1px 2px #212121;
         border-radius: 5px;
         font-size: 10px;
         color: #8D99AE;

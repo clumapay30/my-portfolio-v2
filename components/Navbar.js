@@ -51,7 +51,7 @@ const Navbar = () => {
                 </Link>
             </nav>
             <nav className={styles.nav2}>
-                <Link href="https://drive.google.com/file/d/1VXAbgYk95c3yc8so_r4ya9ub7NATZHn7/view?usp=sharing">
+                <Link href="https://drive.google.com/file/d/1yiZ9QGD93-YnumPgxiWuWUKHCdxdVdJ-/view?usp=sharing">
                     <a className={styles.resume} target="_blank" rel="noreferrer noopener">
                         <Image src={!resumeEffect ? "/resume.png" : "/resume-hover.png"} onMouseEnter={() => setResumeEffect(true)} onMouseLeave={() => setResumeEffect(false)} width={20} height={22} />
                         {resumeEffect ? <h2 className={styles.active}>My resume</h2> : <h2 className={styles.inactive}>My resume</h2>}
